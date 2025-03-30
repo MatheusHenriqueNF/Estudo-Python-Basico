@@ -12,7 +12,10 @@ while resposta == "sim":
         media += nota
 
     media = media / quantidade_nota
-    print(media)
+    if media <= 5.9:
+        print(f"A média foi {media}. REPROVADO.")
+    elif media >= 6:
+        print(f"A média foi {media}. APROVADO.")
     resposta = input("Deseja inserir um novo aluno?").lower()
 
 print("Programa finalizado!")
